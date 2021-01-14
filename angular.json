@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Tempo"
+  "defaultProject": "Tempo",
+  "cli": {
+    "analytics": "a6092a1a-cb07-4685-b8c4-dc5fabf2e29a"
+  }
 }
