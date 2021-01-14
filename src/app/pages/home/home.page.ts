@@ -13,7 +13,7 @@ import * as fromHomeSelectors from'./state/home.selectors';
 })
 export class HomePage implements OnInit {
 
-  searchControl: FormControl = new FormControl;
+  searchControl!: FormControl;
 
   text!: string;
 
@@ -22,13 +22,12 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.searchControl = new FormControl('', Validators.required);
     
-    this.store.pipe(select(fromHomeSelectors.selectHomeText))
-      .subscribe(text => this.text = text);
+    this.store.pipe(select(fromHomeSelectors.selectCurrentWeather));
   }
 
   doSearch() {
-    const text = this.searchControl.value;
-    this.store.dispatch(fromHomeActions.changeText({ text }));
+    const query = this.searchControl.value;
+    this.store.dispatch(fromHomeActions.loadCurrentWeather({ query }));
   }
 
 }
