@@ -15,7 +15,7 @@ export class HomePage implements OnInit {
 
   searchControl: FormControl = new FormControl;
 
-  text!: String;
+  text!: string;
 
   constructor(private store: Store) { }
 

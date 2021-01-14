@@ -3,8 +3,8 @@ import { createReducer, Action, on } from "@ngrx/store"
 import * as fromHomeActions from './home.actions';
 
 export interface HomeState {
-    text: String;
-    text2: String;
+    text: string;
+    text2: string;
 }
 
 export const HomeInitialState: HomeState = {
@@ -20,6 +20,6 @@ const reducer = createReducer(
     })),
 );
 
-export function homeReducer(state: HomeState, action: Action): HomeState {
+export function homeReducer(state: HomeState | undefined, action: Action): HomeState {
     return reducer(state, action);
 }
