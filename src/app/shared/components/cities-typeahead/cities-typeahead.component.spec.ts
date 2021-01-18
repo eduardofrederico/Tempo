@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DetailsPage } from './details.page';
+import { CitiesTypeaheadComponent } from './cities-typeahead.component';
 
-describe('DetailsPage', () => {
-  let component: DetailsPage;
-  let fixture: ComponentFixture<DetailsPage>;
+describe('CitiesTypeaheadComponent', () => {
+  let component: CitiesTypeaheadComponent;
+  let fixture: ComponentFixture<CitiesTypeaheadComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DetailsPage ]
+      declarations: [ CitiesTypeaheadComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DetailsPage);
+    fixture = TestBed.createComponent(CitiesTypeaheadComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

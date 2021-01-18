@@ -1,4 +1,3 @@
-
 import { Coord } from './weather.model';
 
 export class Bookmark {
