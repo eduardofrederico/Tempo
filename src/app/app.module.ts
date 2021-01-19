@@ -21,6 +21,7 @@ import { CustomRouterSerializer } from './shared/state/router/router.reducer';
     AppComponent,
   ],
   imports: [
+    AppComponent,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

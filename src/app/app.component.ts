@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-import * as moment from 'moment-timezone';
 import 'moment/locale/pt-br';
 
 @Component({
@@ -11,6 +10,5 @@ import 'moment/locale/pt-br';
 export class AppComponent {
 
   constructor() {
-    moment.locale('pt-br');
   }
 }

@@ -17,7 +17,7 @@ import * as fromConfigSelectors from '../state/config/config.selectors';
 })
 export class WeatherService implements OnDestroy {
 
-  private unit: Units;
+  private unit!: Units;
 
   private serviceDestroyed$ = new Subject();
 

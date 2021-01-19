@@ -4,7 +4,7 @@ import { CityDailyWeather } from 'src/app/shared/models/weather.model';
 import * as fromDetailsActions from './details.actions';
 
 export interface DetailsState {
-  entity: CityDailyWeather;
+  entity!: CityDailyWeather;
   loading: boolean;
   error: boolean;
 }

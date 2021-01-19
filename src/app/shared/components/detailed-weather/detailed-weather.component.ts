@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { Weather } from '../../models/weather.model';
 import { Units } from '../../models/units.enum';
-import { unitToSymbol } from '../../utils/units.utils';
+import { unitToSymbol } from '../../utils/unit.utils';
 
 @Component({
   selector: 'jv-detailed-weather',

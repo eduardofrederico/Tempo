@@ -17,11 +17,11 @@ import * as fromConfigSelectors from '../../../../shared/state/config/config.sel
 })
 export class DetailsPage implements OnInit {
 
-  details$: Observable<CityDailyWeather>;
-  loading$: Observable<boolean>;
-  error$: Observable<boolean>;
+  details$!: Observable<CityDailyWeather>;
+  loading$!: Observable<boolean>;
+  error$!: Observable<boolean>;
 
-  unit$: Observable<Units>;
+  unit$!: Observable<Units>;
 
   constructor(private store: Store<AppState>) {
   }

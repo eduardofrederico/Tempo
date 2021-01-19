@@ -1,10 +1,8 @@
 import { Component, ChangeDetectionStrategy, Input } from "@angular/core";
 
-import * as moment from 'moment-timezone';
-
 import { DailyWeather, Weather } from 'src/app/shared/models/weather.model';
 import { Units } from 'src/app/shared/models/units.enum';
-import { unitToSymbol } from 'src/app/shared/utils/units.utils';
+import { unitToSymbol } from 'src/app/shared/utils/unit.utils';
 
 @Component({
   selector: 'jv-daily-weather',

@@ -3,7 +3,7 @@ import { ControlValueAccessor, NgControl } from '@angular/forms';
 
 import { Observable, Subscriber } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
-import { TypeaheadMatch } from 'ngx-bootstrap/typeahead/public_api';
+
 
 import { CityTypeaheadItem } from '../../models/city-typeahead-item.model';
 import { CitiesService } from '../../services/cities.service';
