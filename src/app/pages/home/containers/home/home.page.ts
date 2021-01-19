@@ -38,7 +38,7 @@ export class HomePage implements OnInit, OnDestroy {
 
   private componentDestroyed$ = new Subject();
 
-  private portalOutlet: PortalOutlet;
+  private portalOutlet!: PortalOutlet;
 
   constructor(private store: Store,
               private componentFactoryResolver: ComponentFactoryResolver,
